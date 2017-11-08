@@ -7,6 +7,9 @@ template = TrainingNeurons();
 
 %% Iterating the Image with Template
 
+%Hello from Mac
+
+
 img1 = imread('Reference/PV ChR2 Animal 4 - Less Noise.tif');
 img1 = double(img1);
 [result1,centroids1] = templatefilter(img1,template);
