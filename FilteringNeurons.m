@@ -7,16 +7,16 @@ template = TrainingNeurons();
 
 %% Iterating the Image with Template
 
-img1 = imread('PV ChR2 Animal 4 - Less Noise.tif');
+img1 = imread('Reference/PV ChR2 Animal 4 - Less Noise.tif');
 img1 = double(img1);
 [result1,centroids1] = templatefilter(img1,template);
 %imshow(result);title(['\fontsize{13} Number of Neuron: ' num2str(size(centroids,1))],'FontWeight','bold','Color','r');
 
-img2 = imread('PV ChR2 Animal 5 - Less Noise.tif');
+img2 = imread('Reference/PV ChR2 Animal 5 - Less Noise.tif');
 img2 = double(img2);
 [result2,centroids2] = templatefilter(img2,template);
 
-img3 = imread('PV ChR2 Animal 2.tif');
+img3 = imread('Reference/PV ChR2 Animal 2.tif');
 img3 = double(img3);
 [result3,centroids3] = templatefilter(img3,template);
 
